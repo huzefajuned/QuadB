@@ -1,18 +1,19 @@
 import { useEffect, useContext } from "react";
+import { useParams } from "react-router-dom";
 
 // Context
 import ShowsContext from "../context/shows/showsContext";
 
 // Components
-import Loader from "../components/Loader";
+import Loader from "../components/Loader/Loader";
 
-const Singlepage = ({ match }) => {
+const Singlepage = () => {
+  const { id } = useParams();
+  console.log("ID is", id);
   const { getSingleShow, singleShow, loading } = useContext(ShowsContext);
 
   useEffect(() => {
-    getSingleShow(match.params.id);
-
-    // eslint-disable-next-line
+    getSingleShow(id);
   }, []);
 
   const removeTags = (text) => {

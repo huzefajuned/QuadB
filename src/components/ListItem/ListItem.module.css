@@ -1,0 +1,13 @@
+.container {
+    background-color: rgb(25, 27, 27);
+    width: 80vw;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.main {
+    background-color: rgb(198, 73, 73);
+    padding: 10px;
+}

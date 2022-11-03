@@ -4,9 +4,9 @@ import { useContext } from "react";
 import ShowsContext from "../context/shows/showsContext";
 
 // Components
-import Searchbar from "../components/Searchbar";
-import ListItem from "../components/ListItem";
-import Loader from "../components/Loader";
+import Searchbar from "../components/Searchbar/Searchbar";
+import ListItem from "../components/ListItem/ListItem";
+import Loader from "../components/Loader/Loader";
 
 const Homepage = () => {
   const showsContext = useContext(ShowsContext);

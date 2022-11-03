@@ -3,17 +3,15 @@ const Aboutpage = () => {
     <div className="about">
       <h3 className="about__title">ABOUT PAGE</h3>
       <div className="about__info">
-        <p>Tv Show Search App (v1.0)</p>
+        <p>Quad B Search App.</p>
         <div>
-          <p>Things learnt from app build:</p>
+          <p>Things learnt from app build THIS react application:</p>
           <ul>
-            <li>React (create-react-app)</li>
-            <li>Basic CSS & HTML</li>
-            <li>Axios AJAX Request</li>
             <li>TVMAZE API (https://www.tvmaze.com/api)</li>
-            <li>React Router</li>
-            <li>React Context API</li>
-            <li>Deploying to Netlify</li>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
+            soluta accusantium? Voluptas fuga soluta sapiente harum natus? Eius
+            repudiandae accusamus quos doloribus corporis perferendis
+            consequatur quod doloremque quae. Non, deserunt.
           </ul>
         </div>
       </div>

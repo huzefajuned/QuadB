@@ -1,11 +1,10 @@
 import { useState, useContext } from "react";
-
 // Context
-import ShowsContext from "../context/shows/showsContext";
-import AlertsContext from "../context/alerts/alertsContext";
+import ShowsContext from "../../context/shows/showsContext";
+import AlertsContext from "../../context/alerts/alertsContext";
 
 // Components
-import Alert from "./Alert";
+import Alert from "../Alert/Alert";
 
 const Searchbar = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -19,7 +18,7 @@ const Searchbar = () => {
     e.preventDefault();
 
     if (searchTerm === "") {
-      setAlert("Please enter something", "danger");
+      setAlert("Please enter something", "warning");
     } else {
       searchShows(searchTerm);
     }
