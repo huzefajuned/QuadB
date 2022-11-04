@@ -1,7 +1,6 @@
 import { useState, useContext } from "react";
 // Context
 import ShowsContext from "../../context/shows/showsContext";
-import AlertsContext from "../../context/alerts/alertsContext";
 
 import styles from "../Searchbar/Searchbar.module.css";
 

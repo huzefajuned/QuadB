@@ -1,13 +1,35 @@
 .container {
-    background-color: rgb(25, 27, 27);
-    width: 80vw;
-    margin: auto;
+    /* background-color: rgb(25, 27, 27); */
     padding: 10px;
-    display: flex;
-    flex-direction: row;
+    margin: 10px;
 }
 
-.main {
-    background-color: rgb(141, 26, 26);
+.inner {
+    /* background-color: rgb(141, 26, 26); */
     padding: 10px;
+    align-items: center;
+    text-align: center;
+    object-fit: cover;
+    max-width: 240px;
+    transition: transform 0.2s;
+    /* margin: 10px; */
+}
+
+.inner:hover {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    cursor: pointer;
+    transform: scale(1.1);
+    /* Animation */
+}
+
+.inner>img {
+    width: 150px;
+    object-fit: contain;
+}
+
+.name,
+.rating {
+    /* background-color: aqua; */
+    font-size: 14px;
 }

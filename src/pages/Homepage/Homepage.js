@@ -1,24 +1,24 @@
 import { useContext } from "react";
-
+import styles from "../Homepage/Homepage.module.css";
 // Context
-import ShowsContext from "../context/shows/showsContext";
+import ShowsContext from "../../context/shows/showsContext";
 
 // Components
-import Searchbar from "../components/Searchbar/Searchbar";
-import ListItem from "../components/ListItem/ListItem";
-import Loader from "../components/Loader/Loader";
+import Searchbar from "../../components/Searchbar/Searchbar";
+import ListItem from "../../components/ListItem/ListItem";
+import Loader from "../../components/Loader/Loader";
 
 const Homepage = () => {
   const showsContext = useContext(ShowsContext);
   const { loading, shows } = showsContext;
 
   return (
-    <div className="homepage">
+    <div className={styles.container}>
       <Searchbar />
       {loading ? (
         <Loader />
       ) : (
-        <div className="homepage__list">
+        <div className={styles.inner}>
           {shows.map((item) => (
             <ListItem
               key={item.show.id}
