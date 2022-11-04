@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar/Navbar";
 // Pages
 import HomePage from "./pages/Homepage/Homepage";
 import AboutPage from "./pages/Aboutpage";
-import SinglePage from "./pages/Singlepage";
+import SinglePage from "./pages/Singlepage/Singlepage";
 import Loader from "./components/Loader/Loader";
 
 const App = () => {
