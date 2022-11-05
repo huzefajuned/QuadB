@@ -1,8 +1,10 @@
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import styles from "../ListItem/ListItem.module.css";
 
 const ListItem = ({ image, name, rating, id }) => {
   const navigate = useNavigate();
+
   return (
     <div
       className={styles.container}

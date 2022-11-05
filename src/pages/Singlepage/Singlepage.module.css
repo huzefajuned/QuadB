@@ -55,6 +55,26 @@
 
 /* button for GO-back */
 
+.book_Btn {
+    background-color: wheat;
+    color: rgba(0, 146, 51, 0.652);
+    border: 1px solid beige;
+    width: 200px;
+    margin: 20px auto;
+    border: none;
+    padding: 10px;
+    font-size: 17px;
+    font-family: monospace;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.book_Btn:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 4, 4);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
 .btn {
     color: rgba(0, 146, 51, 0.652);
     border: 1px solid beige;

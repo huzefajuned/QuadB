@@ -9,6 +9,7 @@ import HomePage from "./pages/Homepage/Homepage";
 import AboutPage from "./pages/Aboutpage";
 import SinglePage from "./pages/Singlepage/Singlepage";
 import Loader from "./components/Loader/Loader";
+import Bookshow from "./pages/Bookshow/Bookshow";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -29,6 +30,9 @@ const App = () => {
             </Routes>
             <Routes>
               <Route path="/singleshow/:id" element={<SinglePage />} />
+            </Routes>
+            <Routes>
+              <Route exact path="/bookShow" element={<Bookshow />} />
             </Routes>
           </div>
         </>

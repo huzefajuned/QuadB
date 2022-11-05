@@ -1,4 +1,4 @@
-import { useEffect, useContext } from "react";
+import { useEffect, useContext, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import styles from "../Singlepage/Singlepage.module.css";
 
@@ -9,10 +9,19 @@ import ShowsContext from "../../context/shows/showsContext";
 import Loader from "../../components/Loader/Loader";
 
 const Singlepage = () => {
-  const navigate = useNavigate();
-  const { id } = useParams();
-  console.log("ID is", id);
   const { getSingleShow, singleShow, loading } = useContext(ShowsContext);
+
+  const navigate = useNavigate();
+
+  const [movie, setMovie] = useState(singleShow.name);
+  const navToViewPage = (movie) => {
+    navigate("/bookShow", {
+      state: movie,
+    });
+    // console.log("movies ", movie);
+  };
+
+  const { id } = useParams();
 
   useEffect(() => {
     getSingleShow(id);
@@ -74,6 +83,12 @@ const Singlepage = () => {
                   "No offical site"
                 )}
               </p>
+              <button
+                className={styles.book_Btn}
+                onClick={() => navToViewPage(singleShow.name)}
+              >
+                Book Show
+              </button>
             </div>
           </div>
           <div className={styles.bottom}>
@@ -81,7 +96,7 @@ const Singlepage = () => {
           </div>
           <button className={styles.btn} onClick={() => navigate("/")}>
             GO-BACK
-          </button>
+          </button>{" "}
         </div>
       )}
     </>

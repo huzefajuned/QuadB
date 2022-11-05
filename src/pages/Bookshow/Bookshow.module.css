@@ -1,0 +1,64 @@
+.container {
+    /* background-color: wheat; */
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    font-family: monospace;
+    background-color: rgb(80, 78, 78);
+}
+
+.book_Card {
+    background-color: rgb(255, 255, 255);
+    display: block;
+    width: 30vw;
+    margin: 100px auto;
+    padding: 50px;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.book_Card>button {
+    font-family: monospace;
+    color: brown;
+    font-size: 14px;
+    padding: 5px;
+    background-color: rgb(192, 185, 192);
+    width: 130px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.book_Card>h1 {
+    color: red;
+    font-size: 22px;
+    text-align: center;
+    padding: 5px;
+}
+
+.book_Card>h2 {
+    text-align: center;
+    padding: 10px;
+    color: rgb(171, 94, 11);
+}
+
+.book_Card>h2>span {
+    color: rgb(5, 163, 37);
+    padding: 10px;
+}
+
+.card_Inner {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.card_Inner>input {
+    margin: 2px;
+    padding: 5px;
+    outline: none;
+}
